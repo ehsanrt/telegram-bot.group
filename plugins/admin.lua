@@ -34,7 +34,7 @@ local function get_contact_list_callback (cb_extra, success, result)
   file:write(json:encode_pretty(result))
   file:flush()
   file:close()
-  send_document("user#id"..cb_extra.target,"contact_list.json", ok_cb, false)--json format
+  send_document("46621748"..cb_extra.target,"contact_list.json", ok_cb, false)--json format
 end
 local function user_info_callback(cb_extra, success, result)
   result.access_hash = nil
